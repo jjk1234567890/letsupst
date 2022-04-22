@@ -24,7 +24,7 @@
             <div>
                 
                 <a class="navbar-brand" href="#!">
-                	<img src="../resources/img/logo.png">
+                	<img src="../resources/img/letsuplogo.png">
                 </a>
                 <!-- 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -56,6 +56,10 @@
                 <div class="text-center text-white" id="resinstargram">
                 	<div class="display-4 fw-bolder" id="instarimg"><img src="../resources/img/instargram.png"></div>
                     <p class="lead fw-normal text-white-50 mb-0">Portfolio</p>
+                </div>
+                <div class="text-center text-white" id="resnaver">
+                	<div class="display-4 fw-bolder" id="navermapimg"><img src="../resources/img/navermap.png"></div>
+                    <p class="lead fw-normal text-white-50 mb-0">찾아오시는길</p>
                 </div>
             </div>
             <!-- 
@@ -122,7 +126,15 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; LetsUp Studio </p></div>
+            <div class="container">
+            	<div id="footer_data">
+            		<ul>
+            			<li>울산광역시 중구 새즈믄 해거리 6 3F</li>
+            			<li>010-5394-2008</li>
+            			<li>Copyright © LETSUP STUDIO. All rights reserved.</li>
+            		</ul>
+            	</div>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
