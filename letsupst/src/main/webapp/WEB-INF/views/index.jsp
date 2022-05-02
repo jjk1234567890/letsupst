@@ -15,8 +15,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../resources/css/styles.css" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../resources/js/main.js"></script>
+         <link href="../resources/css/slick.css" rel="stylesheet" />
+         <link href="../resources/css/slick-theme.css" rel="stylesheet" />
+         
+
+
+
     </head>
     <body>
         <!-- Navigation-->
@@ -47,7 +51,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="bg-dark py-5" id="menu">
             <div class="container px-4">
                 <div class="text-center text-white" id="reskakao">
                 	<div class="display-4 fw-bolder" id="kakaoimg"><img src="../resources/img/kakao-logo-3.png"></div>
@@ -71,58 +75,74 @@
         </header>
         <!-- Section-->
         <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
+        	<div class="container px-4 px-lg-5 mt-5">
+        		<iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showTz=0&showCalendars=0&showTabs=0&showPrint=0&src=amprNzM0NDlAZ21haWwuY29t&color=%23039BE5&color=%23E4C441" style="border-width:0" width="100%" height="300">
+        		</iframe>
+        	</div>
+        	<div id="logohide"></div>
+            <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- 
+       			<div class="slider fade">
+				<div>
+					<div class="image">
+						<img src="../resources/img/kakao-logo-3.png" class="img" />
+					</div>
+				</div>
+				<div>
+					<div class="image">
+						<img src="../resources/img/kakao-logo-5.png" class="img" />
+					</div>
+				</div>
+				<div>
+					<div class="image">
+						<img src="../resources/img/kakao-logo-6.png" class="img" />
+					</div>
+				</div>
+			</div>
+			 --><!-- slider fade -->
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
@@ -139,7 +159,12 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="../resources/js/scripts.js"></script>
         
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+        <script src="../resources/js/slick.js"></script>
+        <script src="../resources/js/main.js"></script>
+               
+
     </body>
 </html>
