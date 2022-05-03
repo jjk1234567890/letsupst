@@ -15,12 +15,49 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../resources/css/styles.css" rel="stylesheet" />
-         <link href="../resources/css/slick.css" rel="stylesheet" />
-         <link href="../resources/css/slick-theme.css" rel="stylesheet" />
-         
-
-
-
+        <link href="../resources/css/slick.css" rel="stylesheet" />
+        <link href="../resources/css/slick-theme.css" rel="stylesheet" />
+        <link href='../resources/fullcalendar-5.11.0/lib/main.css' rel='stylesheet' />
+		<script src='../resources/fullcalendar-5.11.0/lib/main.js'></script>
+		<script type='text/javascript'>
+			document.addEventListener('DOMContentLoaded', function() {
+			var calendarEl = document.getElementById('calendar');
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+					dayMaxEventRows: true, // for all non-TimeGrid views
+					views: {
+					timeGrid: {
+					dayMaxEventRows: 3 // adjust to 6 only for timeGridWeek/timeGridDay
+					}
+				},
+				googleCalendarApiKey: 'AIzaSyBG2vEOaXbgLuqSh0-S-Wj1ATCpuoJMZus',
+			    eventSources: [
+			    {
+			          googleCalendarId:'jht00725@gmail.com',
+			          className:'렛츠업 스튜디오1'
+			          ,backgroundColor:'#be5683'//rgb,#ffffff 등의 형식으로 할 수 있어요.
+			    },
+			    {
+			          googleCalendarId:'letsupstudio@gmail.com',
+			          className:'렛츠업 스튜디오2'
+			          ,backgroundColor:'#FFE400'
+			    }/*,
+			    {
+			          googleCalendarId:'jht00725@gmail.com',
+			          className:'렛츠업 스튜디오',
+			            color: '#3b6978',
+			            //textColor: 'black' 
+			    }*/
+			    ]
+			  });
+			  calendar.render();
+			});
+	</script>
+	<style>
+		#calendar{
+		   width:100%;
+		   margin:20px auto;
+		}
+	</style>
     </head>
     <body>
         <!-- Navigation-->
@@ -75,11 +112,14 @@
         </header>
         <!-- Section-->
         <section class="py-5">
+        	<!-- 
         	<div class="container px-4 px-lg-5 mt-5">
         		<iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showTz=0&showCalendars=0&showTabs=0&showPrint=0&src=amprNzM0NDlAZ21haWwuY29t&color=%23039BE5&color=%23E4C441" style="border-width:0" width="100%" height="300">
         		</iframe>
         	</div>
         	<div id="logohide"></div>
+        	 -->
+        	<div class="container px-4 px-lg-5 mt-5" id='calendar'></div>
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
